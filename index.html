@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mango - Inicio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.imgur.com/G118otu.jpeg" alt="Logo de Mango">
+        </div>
+        <div class="title">
+            <h1>Mango</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">¿Quienes Somos?</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+                <li><a href="#carrito">Armar Carrito</a></li>
+                <li><a href="#login" class="login-btn">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Información adicional -->
+    <section class="additional-info">
+        <h2>¡Bienvenidos a Mango!</h2>
+        <p>Descubre nuestro amplio catálogo de productos frescos y deliciosos. Estamos comprometidos a brindarte la mejor experiencia de compra en línea.</p>
+    </section>
+    <main>
+        <section id="inicio" class="about-us hidden">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos Mango, un nuevo mercado que acaba de empezar a incursionar en el mundo de la compra y venta virtual. Nuestra misión es proporcionar a nuestros clientes una experiencia de compra en línea excepcional.</p>
+        </section>
+        
+        <section id="productos" class="products hidden">
+            <h2>Nuestros Productos</h2>
+            <div class="product">
+                <img src="https://i.imgur.com/vZl9O9q.jpeg" alt="Frutas">
+                <p>Frutas</p>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/3iBfFa9.jpeg" alt="Verduras">
+                <p>Verduras</p>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/zW3quDr.png" alt="Snacks">
+                <p>Snacks</p>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/murVkaL.jpeg" alt="Aseo">
+                <p>Aseo</p>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/8MbyiN2.jpeg" alt="Carne">
+                <p>Carne</p>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/GfqmTAM.jpeg" alt="Pollo">
+                <p>Pollo</p>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/Vm8bFbe.jpeg" alt="Pescado">
+                <p>Pescado</p>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/RB9lC2h.jpeg" alt="Dulces">
+                <p>Dulces</p>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/BNDxAIu.jpeg" alt="Alcohol">
+                <p>Alcohol</p>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="contact hidden">
+            <h2>Contacto</h2>
+            <p class="NuestraInfo">Nuestra información de contacto para cualquier consulta es:</p>
+            <ul class="INFO">
+                <li>Número de Teléfono: +123 456 789</li>
+                <li>Correo Electrónico: info@mango.com</li>
+                <li class="negrita">Redes Sociales:</li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://twitter.com/">Twitter</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+        </section>
+        <!-- Sección de Armar Carrito -->
+        <section id="carrito" class="cart-builder hidden">
+            <h2>Armar Carrito</h2>
+            <p>AQUI IRA EL CARRITO</p>
+        </section>
+        <section id="login" class="section hidden">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required><br>
+    
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required><br>
+    
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Mango. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
