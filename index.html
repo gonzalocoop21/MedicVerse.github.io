@@ -3,115 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Mango - Inicio</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
+<body class="">
+    
+    <nav class="contenedor-full nav">
         <div class="logo">
-            <img src="https://i.imgur.com/G118otu.jpeg" alt="Logo de Mango">
+            <img src="./img/logo.png" alt="VitalCore">
         </div>
-        <div class="title">
-            <h1>Mango</h1>
+        <div class="opciones">
+            <a href="#home">Home</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#planes">Planes</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#registro">Registrate</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">¿Quienes Somos?</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contáctanos</a></li>
-                <li><a href="#carrito">Armar Carrito</a></li>
-                <li><a href="#login" class="login-btn">Iniciar Sesión</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Información adicional -->
-    <section class="additional-info">
-        <h2>¡Bienvenidos a Mango!</h2>
-        <p>Descubre nuestro amplio catálogo de productos frescos y deliciosos. Estamos comprometidos a brindarte la mejor experiencia de compra en línea.</p>
-    </section>
-    <main>
-        <section id="inicio" class="about-us hidden">
-            <h2>¿Quiénes Somos?</h2>
-            <p>Somos Mango, un nuevo mercado que acaba de empezar a incursionar en el mundo de la compra y venta virtual. Nuestra misión es proporcionar a nuestros clientes una experiencia de compra en línea excepcional.</p>
-        </section>
-        
-        <section id="productos" class="products hidden">
-            <h2>Nuestros Productos</h2>
-            <div class="product">
-                <img src="https://i.imgur.com/vZl9O9q.jpeg" alt="Frutas">
-                <p>Frutas</p>
-            </div>
-            <div class="product">
-                <img src="https://i.imgur.com/3iBfFa9.jpeg" alt="Verduras">
-                <p>Verduras</p>
-            </div>
-            <div class="product">
-                <img src="https://i.imgur.com/zW3quDr.png" alt="Snacks">
-                <p>Snacks</p>
-            </div>
-            <div class="product">
-                <img src="https://i.imgur.com/murVkaL.jpeg" alt="Aseo">
-                <p>Aseo</p>
-            </div>
-            <div class="product">
-                <img src="https://i.imgur.com/8MbyiN2.jpeg" alt="Carne">
-                <p>Carne</p>
-            </div>
-            <div class="product">
-                <img src="https://i.imgur.com/GfqmTAM.jpeg" alt="Pollo">
-                <p>Pollo</p>
-            </div>
-            <div class="product">
-                <img src="https://i.imgur.com/Vm8bFbe.jpeg" alt="Pescado">
-                <p>Pescado</p>
-            </div>
-            <div class="product">
-                <img src="https://i.imgur.com/RB9lC2h.jpeg" alt="Dulces">
-                <p>Dulces</p>
-            </div>
-            <div class="product">
-                <img src="https://i.imgur.com/BNDxAIu.jpeg" alt="Alcohol">
-                <p>Alcohol</p>
-            </div>
-            <!-- Agrega más productos aquí -->
-        </section>
+    </nav>
 
-        <!-- Sección de Contacto -->
-        <section id="contacto" class="contact hidden">
-            <h2>Contacto</h2>
-            <p class="NuestraInfo">Nuestra información de contacto para cualquier consulta es:</p>
-            <ul class="INFO">
-                <li>Número de Teléfono: +123 456 789</li>
-                <li>Correo Electrónico: info@mango.com</li>
-                <li class="negrita">Redes Sociales:</li>
-                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                <li><a href="https://twitter.com/">Twitter</a></li>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-            </ul>
-        </section>
-        <!-- Sección de Armar Carrito -->
-        <section id="carrito" class="cart-builder hidden">
-            <h2>Armar Carrito</h2>
-            <p>AQUI IRA EL CARRITO</p>
-        </section>
-        <section id="login" class="section hidden">
-            <h2>Iniciar Sesión</h2>
-            <form id="login-form">
-                <label for="username">Usuario:</label>
-                <input type="text" id="username" name="username" required><br>
-    
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required><br>
-    
-                <button type="submit">Iniciar Sesión</button>
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2023 Mango. Todos los derechos reservados.</p>
+    <section id="home" class="contenedor home">
+        <div class="izquierda">
+            <div class="encabezado">
+                <h1>VitalCore. Expertos en <br> Cuidado de la salud.</h1>
+                <br>
+                <p>Cada paciente es una historia unica. En nuestra clinica, nos enorgullece ser parte de tu historia de salud.</p>
+            </div>
+            <img class="img-w-full" src="./img/doctor1.webp" alt="">
+        </div>
+        <div class="derecha">
+            <img class="img-w-full" src="./img/doctor2.webp" alt="">
+            <div class="botones-home">
+                <a href="" class="btn-medico">Boton de Medico</a>
+                <a href="" class="btn-paciente">Boton de Paciente</a>
+            </div>
+        </div>
+    </section>
+
+    <div style="height: 50px;"></div>
+<br>
+
+    <section id="nosotros" class="contenedor nosotros">
+        <h1>Nosotros</h1>
+        <p>
+            MedicVerse es una startup innovadora en el campo de la salud que se enfoca en facilitar el acceso a servicios médicos mediante consultas médicas a distancia a través de plataformas web y móviles. Su objetivo es atender consultas básicas de manera efectiva, aliviar la carga en los sistemas hospitalarios y mejorar la atención médica primaria. Utilizan tecnología de vanguardia y un equipo comprometido para brindar acceso rápido y fiable a los servicios médicos, mejorando la calidad de vida de las personas.</p>
+        <img src="./img/doctor3.webp" class="img-w-full" alt="">
+    </section>
+
+    <div style="height: 50px;"></div>
+<br>
+    <section id="planes" class="contenedor planes">
+        <h1>Planes</h1>
+<br>
+        <div class="contenedor-planes">
+            <div class="plan-free">
+                <h3>Free</h3>
+                <div class="plan-contenido">
+                    <p>Teleconsulta</p>
+                    <p>Acceso a teleconsultas masivas y videollamadas</p>
+                    <p>S/. 0.00</p>
+                </div>
+                <a href="">Obtenerlo</a>
+            </div>
+            <div class="plan-premium">
+                <h3>Premium</h3>
+                <div class="plan-contenido">
+                    <p>Consultas personales</p>
+                    <p>Consultas personalizadas de medicina general, videollamdas personales</p>
+                    <p>S/. 19.90</p>
+                </div>
+                <a href="">Obtenerlo</a>
+            </div>
+        </div>
+    </section>
+
+    <div style="height: 50px;"></div>
+
+    <section id="contacto" class="contenedor contacto">
+        <h1>Contactanos</h1>
+        <div class="contenedor-contacto">
+            <div class="contacto-opciones">
+                <img src="./img/icons/correo.png" alt="">
+                <img src="./img/icons/wsp-contacto.png" alt="">
+            </div>
+            <div class="contacto-formulario">
+                <form action="post">
+                    <div class="form-2">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre">
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="nombre">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="correo">Correo</label>
+                        <input type="text" id="correo" name="correo">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <input style="margin-top: 10px;" type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="contenedor-full footer">
+        <div class="opciones">
+            <a href="">Empresas Afiliadas</a>
+            <a href="">Comunidad</a>
+            <a href="">Publicidad</a>
+            <a href="">Idioma</a>
+        </div>
+        <div class="contenedor-icons">
+            <img src="./img/icons/wsp.webp" alt="whatsapp">
+            <img src="./img/icons/fb.webp" alt="facebook">
+            <img src="./img/icons/ig.png" alt="instagram">
+            <img src="./img/icons/twitter.png" alt="twitter">
+        </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
