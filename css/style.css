@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+body{
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+}
+.contenedor{
+    width: 1140px;
+    max-width: 95%;
+    margin: auto;
+}
+.contenedor-full{
+    width: 100%;
+    padding: 0px 10px;
+
+}
+.nav,.footer{
+    width: 100%;
+    height: 70px;display: flex;
+    align-items: center;
+}
+
+.footer{
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.contenedor-icons{
+    display: flex;
+    gap: 10px;
+}
+.contenedor-icons>img{
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.nav{    
+    background-color: black;
+    position: relative;
+    justify-content: space-between;
+}
+.logo > img {
+    height: 50px;
+    position: relative;
+    display: block;
+}
+
+.opciones{
+    display: flex;
+    gap: 10px;
+}
+.opciones > a {
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+.nav > .opciones > a:hover {
+    background-color: gray;
+}
+
+.home,.nosotros, .planes, .contacto{
+    margin: 10px auto;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.izquierda, .derecha{
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.plan-free p{
+text-align: center;
+
+}
+.plan-premium p{
+text-align: center;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-w-full{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.botones-home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.btn-paciente, .btn-medico{
+    padding: 10px 15px;
+    color: black;
+    border-radius: 15px;
+}
+
+.btn-medico{
+    background-color: #9AFB97;
+}
+.btn-paciente{
+    background-color: #55D7C8;
+}
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.nosotros > p{
+    text-align: center;
+}
+
+.planes>h1{
+    text-align: center;
+}
+
+.contenedor-planes{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.plan-free,.plan-premium{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.plan-free > a, .plan-premium > a{
+    width: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px 0px;
+    border-radius: 10px;
+}
+.plan-free> h3,.plan-premium > h3{
+    text-align: center;
+    padding: 10px 0px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.plan-contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.plan-contenido > p{
+    padding: 10px 15px;
+    background-color: #B8B8B8;
+    border-radius: 10px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contacto > h1{
+    text-align: center;
+}
+.contenedor-contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+}
+
+.contacto-formulario{
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.contacto-opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.contacto-opciones > img{
+    width: 40%;
+}
+
+.contacto-formulario > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 30px;
+    padding: 2px;
+}
+textarea{
+    display: block;
+    width: 100%;
+}
+
+input[type="submit"]{
+    border: 1px solid black;
+    cursor: pointer;
+    width: 200px;
+    align-self: center;
+    border-radius: 7px;
+    height: 40px;
+    padding: 2px;
+}
+
+@media (max-width: 850px){
+    
+    .home{
+        grid-template-columns: repeat(1, 100%);
+    }
+    .izquierda,.derecha{
+        flex-direction: row;
+        align-items: center;
+    }
+    .botones-home{
+        flex-wrap: wrap;
+    }
+    .btn-medico, .btn-paciente{
+        width: 70%;
+        text-align: center;
+    }
+    .nosotros > img{
+        width: 90%;
+    }
+    .contenedor-contacto{
+        grid-template-columns: repeat(1, 100%);
+        gap: 10px;
+    }
+    .contacto-opciones{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contacto-opciones > img{
+        width: 20%;
+    }
+    .img-w-full{
+        width: 50%;
+    }
+    .footer{
+        min-height: 70px;
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0px;
+        gap: 10px;
+    }
+    .opciones{
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
