@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro Medico</title>
+</head>
+<body>
+    <header>
+        <nav class="contenedor-full nav">
+            <div class="logo">
+                <img src="./img/logo.png" alt="VitalCore">
+            </div>
+            <div class="opciones">
+                <a href="./index.html#home">Home</a>
+                <a href="./index.html#nosotros">Nosotros</a>
+                <a href="./index.html#planes"">Planes</a>
+                <a href="./index.html#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <section id="doctor" class="contenedor-general">
+        <div class="contenedor-global register">
+            <div class="informacion">
+                <div class="info-doc">
+                    <!-- <video src="https://carontestudio.com/img/f4.mp4" autoplay="true" muted="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg"></video>
+                    <h1>Sección primera - Con vídeo</h1> -->
+                    <h1>Bienvenidos</h1>
+                    <p>Ya formas parte de nuestra comunidad medica? Por favor inicia sesion aquí.</p>
+                    <input type="button" value="Inicio sesión" id="sign-in">
+                </div>
+            </div>
+            <div class="contenedor-info">
+                <div class="contenedor-info-doc">
+                    <h1>Crear una cuenta</h1>
+                        <div class="iconos-registro">
+                            <a href="https://accounts.google.com/"><i class='bx bxl-google'></i></a>
+                            <a href="https://www.linkedin.com/login/es"><i class='bx bxl-linkedin-square'></i></a>
+                            <a href="https://login.microsoftonline.com/"><i class='bx bxl-microsoft'></i></a>
+                        <p>o usa tu email para registrarte</p>
+                        </div>
+                    <form class="form">
+                        <label>
+                            <!-- <h5>Nombres:</h5> -->
+                            <i class='bx bx-user-circle'></i>
+                            <input type="text" placeholder="Nombre Completo">
+                        </label>
+                    
+                        <label>
+                            <!-- <h5>Apellidos:</h5> -->
+                            <i class='bx bx-user-circle'></i>
+                            <input type="text" placeholder="Apellidos Completos">
+                        </label>
+                    
+                        <label>
+                            <h6>Fecha de nacimiento:</h6>
+                            <input type="date">
+                        </label>
+                    
+                        <label>
+                            <!-- <h5>Correo electrónico:</h5> -->
+                            <i class='bx bxs-envelope'></i>
+                            <input type="text" placeholder="Correo electronico">
+                        </label>
+                    
+                        <label>
+                            <!-- <h5>Sube tu certificado:</h5> -->
+                            <i class='bx bx-paperclip'><input type="file" accept="image/png, image/jpeg" /></i>
+                            <br>
+                        </label>
+                    
+                        <label>
+                            <!-- <h5>Contraseña :</h5> -->
+                            <i class='bx bx-lock-alt'></i>
+                            <input type="password" placeholder="Contraseña">
+                        </label>
+                        <div class="button-form">
+                            <a class="button-register" href="">Registrarse</a>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contenedor-global login hide">
+            <div class="informacion">
+                <div class="info-doc">
+                    <!-- <video src="https://carontestudio.com/img/f4.mp4" autoplay="true" muted="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg"></video>
+                    <h1>Sección primera - Con vídeo</h1> -->
+                    <h1>¡Bienvenido nuevamente!</h1>
+                    <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                    <input type="button" value="Registrarse" id="sign-up">
+                </div>
+            </div>
+            <div class="contenedor-info">
+                <div class="contenedor-info-doc">
+                    <h1>Inicia sesión</h1>
+                        <div class="iconos-registro">
+                            <a href="https://accounts.google.com/"><i class='bx bxl-google'></i></a>
+                            <a href="https://www.linkedin.com/login/es"><i class='bx bxl-linkedin-square'></i></a>
+                            <a href="https://login.microsoftonline.com/"><i class='bx bxl-microsoft'></i></a>
+                        <p>o Inicia sesión con una cuenta</p>
+                        </div>
+                    <form class="form">
+                        <label>
+                            <!-- <h5>Correo electrónico:</h5> -->
+                            <i class='bx bxs-envelope'></i>
+                            <input type="text" placeholder="Correo electronico">
+                        </label>
+
+                        <label>
+                            <!-- <h5>Contraseña :</h5> -->
+                            <i class='bx bx-lock-alt'></i>
+                            <input type="password" placeholder="Contraseña">
+                        </label>
+                        <div class="button-form">
+                            <a href="./perfilDoctor.html">Iniciar Sesión</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <script src="registro.js"></script>
+    
+    <footer class="contenedor-full footer">
+        <div class="opciones">
+            <a href="">Empresas Afiliadas</a>
+            <a href="">Comunidad</a>
+            <a href="">Publicidad</a>
+            <a href="">Idioma</a>
+        </div>
+        <div class="contenedor-icons">
+            <a href="https://web.whatsapp.com/"><img class="footer-icon" src="./img/icons/wsp.webp" alt="whatsapp"></a>
+            <a href="https://www.facebook.com/"><img class="footer-icon" src="./img/icons/fb.webp" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img class="footer-icon" src="./img/icons/ig.png" alt="instagram"></a>
+            <a href="https://twitter.com/"><img class="footer-icon" src="./img/icons/twitter.png" alt="twitter"></a>  
+        </div>
+    </footer>
+</body>
+</html>

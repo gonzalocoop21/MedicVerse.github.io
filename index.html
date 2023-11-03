@@ -3,57 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <title>VitalCore</title>
 </head>
-<body class="">
+<body>
+    <header>
+        <nav class="contenedor-full nav">
+            <div class="logo">
+                <img src="./img/logo.png" alt="VitalCore">
+            </div>
+            <div class="opciones">
+                <a href="#banner">Home</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#planes">Planes</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <section id="banner">
+        <div class="cont-nosotros">
+            <div class="imagen-central">
+                <img src="./img/banner.png" alt="logo">
+            </div>  
+    </section>
     
-    <nav class="contenedor-full nav">
-        <div class="logo">
-            <img src="./img/logo.png" alt="VitalCore">
-        </div>
-        <div class="opciones">
-            <a href="#home">Home</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#planes">Planes</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#registro">Registrate</a>
-        </div>
-    </nav>
-
+    
+    </div>
     <section id="home" class="contenedor home">
         <div class="izquierda">
             <div class="encabezado">
                 <h1>VitalCore. Expertos en <br> Cuidado de la salud.</h1>
                 <br>
-                <p>Cada paciente es una historia unica. En nuestra clínica, nos enorgullece ser parte de tu historia de salud.</p>
+                <p>Cada paciente es una historia unica. En nuestra clinica, nos enorgullece ser parte de tu historia de salud.</p>
             </div>
             <img class="img-w-full" src="./img/doctor1.webp" alt="">
         </div>
         <div class="derecha">
             <img class="img-w-full" src="./img/doctor2.webp" alt="">
             <div class="botones-home">
-                <a href="" class="btn-medico">Botón de Médicos</a>
-                <a href="" class="btn-paciente">Botón de Pacientes</a>
+                <a href="./doctor.html" class="btn-medico">Boton de Medico</a>
+                <a href="./paciente.html" class="btn-paciente">Boton de Paciente</a>
             </div>
         </div>
     </section>
 
-    <div style="height: 50px;"></div>
-<br>
+    <div class="cont-nosotros">
+        <section id="nosotros" class="contenedor nosotros">
+            <h1>Nosotros</h1>
+            <p>
+                MedicVerse es una startup innovadora en el campo de la salud que se enfoca en facilitar el acceso a servicios médicos mediante consultas médicas a distancia a través de plataformas web y móviles. Su objetivo es atender consultas básicas de manera efectiva, aliviar la carga en los sistemas hospitalarios y mejorar la atención médica primaria. Utilizan tecnología de vanguardia y un equipo comprometido para brindar acceso rápido y fiable a los servicios médicos, mejorando la calidad de vida de las personas.</p>
+            <img src="./img/doctor3.webp" class="img-w-full" alt="">
+        </section>
+    </div>
+    
 
-    <section id="nosotros" class="contenedor nosotros">
-        <h1>Nosotros</h1>
-        <p>
-            MedicVerse es una startup innovadora en el campo de la salud que se enfoca en facilitar el acceso a servicios médicos mediante consultas médicas a distancia a través de plataformas web y móviles. Su objetivo es atender consultas básicas de manera efectiva, aliviar la carga en los sistemas hospitalarios y mejorar la atención médica primaria. Utilizan tecnología de vanguardia y un equipo comprometido para brindar acceso rápido y fiable a los servicios médicos, mejorando la calidad de vida de las personas.</p>
-        <img src="./img/doctor3.webp" class="img-w-full" alt="">
-    </section>
+    
 
-    <div style="height: 50px;"></div>
-<br>
     <section id="planes" class="contenedor planes">
         <h1>Planes</h1>
-<br>
+
         <div class="contenedor-planes">
             <div class="plan-free">
                 <h3>Free</h3>
@@ -62,7 +73,7 @@
                     <p>Acceso a teleconsultas masivas y videollamadas</p>
                     <p>S/. 0.00</p>
                 </div>
-                <a href="">Obtenerlo</a>
+                <a href="#">Obtenerlo</a>
             </div>
             <div class="plan-premium">
                 <h3>Premium</h3>
@@ -71,14 +82,12 @@
                     <p>Consultas personalizadas de medicina general, videollamdas personales</p>
                     <p>S/. 19.90</p>
                 </div>
-                <a href="">Obtenerlo</a>
+                <a href="#">Obtenerlo</a>
             </div>
         </div>
     </section>
-
-    <div style="height: 50px;"></div>
-
-    <section id="contacto" class="contenedor contacto">
+    <div class="cont-nosotros">
+        <section id="contacto" class="contenedor contacto">
         <h1>Contactanos</h1>
         <div class="contenedor-contacto">
             <div class="contacto-opciones">
@@ -86,7 +95,7 @@
                 <img src="./img/icons/wsp-contacto.png" alt="">
             </div>
             <div class="contacto-formulario">
-                <form action="post">
+                <form action="./index.html" method="get">
                     <div class="form-2">
                         <div>
                             <label for="nombre">Nombre</label>
@@ -110,6 +119,8 @@
             </div>
         </div>
     </section>
+</div>
+    
 
     <footer class="contenedor-full footer">
         <div class="opciones">
@@ -119,11 +130,10 @@
             <a href="">Idioma</a>
         </div>
         <div class="contenedor-icons">
-            <img src="./img/icons/wsp.webp" alt="whatsapp">
-            <img src="./img/icons/fb.webp" alt="facebook">
-            <img src="./img/icons/ig.png" alt="instagram">
-            <img src="./img/icons/twitter.png" alt="twitter">
-        </div>
+            <a href="https://web.whatsapp.com/"><img class="footer-icon" src="./img/icons/wsp.webp" alt="whatsapp"></a>
+            <a href="https://www.facebook.com/"><img class="footer-icon" src="./img/icons/fb.webp" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img class="footer-icon" src="./img/icons/ig.png" alt="instagram"></a>
+            <a href="https://twitter.com/"><img class="footer-icon" src="./img/icons/twitter.png" alt="twitter"></a>  
     </footer>
 
 </body>
