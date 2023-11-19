@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/registro.js"> </script>
     <title>VitalCore</title>
 </head>
 <body>
@@ -37,15 +38,15 @@
             <div class="encabezado">
                 <h1>VitalCore. Expertos en <br> Cuidado de la salud.</h1>
                 <br>
-                <p>Cada paciente es una historia unica. En nuestra clinica, nos enorgullece ser parte de tu historia de salud.</p>
+                <p>Cada paciente es una historia única. En nuestra clínica, nos enorgullece ser parte de tu historia de salud.</p>
             </div>
             <img class="img-w-full" src="img/doctor1.webp" alt="">
         </div>
         <div class="derecha">
             <img class="img-w-full" src="img/doctor2.webp" alt="">
             <div class="botones-home">
-                <a href="doctor.html" class="btn-medico">Boton de Medico</a>
-                <a href="paciente.html" class="btn-paciente">Boton de Paciente</a>
+                <a href="doctor.html" class="btn-medico">Inicio de Médico</a>
+                <a href="paciente.html" class="btn-paciente">Inicio de Paciente</a>
             </div>
         </div>
     </section>
@@ -55,7 +56,8 @@
             <h1>Nosotros</h1>
             <p>
                 MedicVerse es una startup innovadora en el campo de la salud que se enfoca en facilitar el acceso a servicios médicos mediante consultas médicas a distancia a través de plataformas web y móviles. Su objetivo es atender consultas básicas de manera efectiva, aliviar la carga en los sistemas hospitalarios y mejorar la atención médica primaria. Utilizan tecnología de vanguardia y un equipo comprometido para brindar acceso rápido y fiable a los servicios médicos, mejorando la calidad de vida de las personas.</p>
-            <img src="img/doctor3.webp" class="img-w-full" alt="">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/glaojfIa0N0" frameborder="0" allowfullscreen></iframe>
+                <img src="img/doctor3.webp" class="img-w-full" alt="">
         </section>
     </div>
     
@@ -79,7 +81,7 @@
                 <h3>Premium</h3>
                 <div class="plan-contenido">
                     <p>Consultas personales</p>
-                    <p>Consultas personalizadas de medicina general, videollamdas personales</p>
+                    <p>Consultas personalizadas de medicina general, videollamadas personales</p>
                     <p>S/. 19.90</p>
                 </div>
                 <a href="#">Obtenerlo</a>
@@ -88,7 +90,7 @@
     </section>
     <div class="cont-nosotros">
         <section id="contacto" class="contenedor contacto">
-        <h1>Contactanos</h1>
+        <h1>Contáctanos</h1>
         <div class="contenedor-contacto">
             <div class="contacto-opciones">
                 <img src="img/icons/correo.png" alt="">
@@ -114,7 +116,7 @@
                         <label for="mensaje">Mensaje</label>
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                     </div>
-                    <input style="margin-top: 10px;" type="submit" value="Enviar">
+                    <input style="margin-top: 10px;" type="submit" value="Enviar" onclick="formEnviado()">
                 </form>
             </div>
         </div>

@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/registro.js"></script>
     <title>VitalCore</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
                 <h2>Doctor</h2>
                 <p>Nombres: Luis Carlos </p>
                 <p>Apellidos: Ramírez Pérez</p>
-                <p>Area de atencion: Medicina General</p>
+                <p>Área de atención: Medicina General</p>
                 <p>Correo: luiscarlosramirez1980@gmail.com</p>
             </div>
         </div>
@@ -62,20 +63,23 @@
                 <h3>Pacientes</h3>
                 
                 <div class="doctores">
-                    <p>Renzo Quispe Yupanqui</p>
-                    
-                    <p>Bismark Chumbe Suarez</p>
+                    <select>
+                        <option>Renzo Quispe Yupanqui</option>
+                        <option>Bismark Chumbe Suarez</option>
+                    </select>
                 </div>
             </div>
             <div class="contenedor-horarios">
                 <h3 style="padding: 10px;">Horarios Programados</h3>
                 <div class="horario">
-                    <p>Lunes: 17:00 - 19:00</p>
-                    <p>Martes: 17:00 - 19:00</p>
+                    <select>
+                        <option>Lunes: 17:00 - 19:00</option>
+                        <option>Martes: 17:00 - 19:00</option>
+                    </select>
                 </div>
             </div>
         </div>
-        <a href="consultaMedicaDoctor.html">Programar Cita</a>
+        <a href="consultaMedicaDoctor.html" onclick="citaProgramada()">Programar Cita</a>
 
     </section>
 

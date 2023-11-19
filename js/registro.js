@@ -17,3 +17,14 @@ btnSignUp1[0].addEventListener("click", e =>{
     formLogin.classList.remove("hide")
 })
 
+function citaEliminada() {
+    alert("Cita Cancelada");
+}
+
+function formEnviado() {
+    alert("Formulario Enviado con Éxito");
+}
+
+function citaProgramada() {
+    alert("Cita Programada");
+}

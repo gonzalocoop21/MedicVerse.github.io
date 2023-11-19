@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/registro.js"></script>
     <title>VitalCore</title>
 </head>
 <body>
@@ -34,6 +35,10 @@
                 <p>Apellidos: Chumbe Suarez</p>
                 <p>Número: +51 999 251 695</p>
                 <p>Correo: bismarkchumbe1@gmail.com</p>
+                <p>Ingresar archivos médicos:<br>
+                    <input type="file">
+                </p>
+                
             </div>
         </div>
         
@@ -43,7 +48,7 @@
     <div style="height: 50px;"></div>
     <section id="Cita" class="contenedor Programar-Cita">
         <div class="encabezado-citas">
-            <h1>PROGRAMAR CONSULTA MEDICA</h1>
+            <h1>PROGRAMAR CONSULTA MÉDICA</h1>
         
             <h2>DOCTORES DISPONIBLES</h2>
         </div>
@@ -75,25 +80,27 @@
                 <h3>Doctores</h3>
                 
                 <div class="doctores">
-                    <p>Dr. Luis Ramírez</p>
-                    
-                    <p>Dr. Javier Sánchez</p>
-                    
-                    <p>Dr. Rodrigo Morales</p>
+                    <select>
+                        <option>Dr. Luis Ramírez</option>
+                        <option>Dr. Javier Sánchez</option>
+                        <option>Dr. Rodrigo Morales</option>
+                      </select>
                 </div>
             </div>
             <div class="contenedor-horarios">
                 <h3>Horarios Disponibles</h3>
                 <div class="horario">
-                    <p>Lunes: 17:00 - 19:00</p>
-                    <p>Martes: 17:00 - 19:00</p>
-                    <p>Miercoles: 15:00 - 17:00</p>
-                    <p>Jueves: 15:00 - 17:00</p>
-                    <p>Viernes: 15:00 - 17:00</p>
+                    <select>
+                        <option>Lunes: 17:00 - 19:00</option>
+                        <option>Martes: 17:00 - 19:00</option>
+                        <option>Miercoles: 15:00 - 17:00</option>
+                        <option>Jueves: 15:00 - 17:00</option>
+                        <option>Viernes: 15:00 - 17:00</option>
+                    </select>
                 </div>
             </div>
         </div>
-        <a href="consultaMedica.html">Programar Cita</a>
+        <a href="consultaMedica.html" onclick="citaProgramada()">Programar Cita</a>
         
     </section>
     <div style="height: 50px;"></div>
